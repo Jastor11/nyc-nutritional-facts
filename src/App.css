@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|IBM+Plex+Sans:300,400');
+
+/*********
+ GLOBALS
+**********/
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Mono';
+  margin: 0;
+}
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1em;
+  /* text-align: center; */
+  background: wheat;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.App ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.App li {
+  background: teal;
+  padding: 8px 12px;
+  font-size: 19px;
+  margin: 8px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.App__title {
+  font-size: 4.5em;
+}
+.App__description {
+  font-size: 23px;
+}
+
+
+/*********
+ FILTERS
+**********/
+.App__current_category,
+.App__current_restaurant {
+  background: tomato;
+  padding: 8px 12px;
+  padding-right: 20px;
+  font-size: 19px;
+  margin: 8px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;  
+  display: inline-block;
+  position: relative;
+}
+.App__current_category span,
+.App__current_restaurant span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+
+}
+
+
+/*********
+ MENU
+**********/
+.App__highlight {
+  /* width: 90%; */
+  margin: 1em auto;
+  background: white;
+  min-height: 300px;
+  box-shadow: 0 2px 4px (0,0,0,0.3);
+  padding: 1em;
+  border: solid 8px black;  
+}
+.App__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.App__menu_items {
+  display: flex;
+}
+.App__menu_item {
+  font-size: 15px !important;
+}
+
+.App__menu_facts {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  padding: .5em;
+}
+.App__menu_facts p {
+  border-bottom: solid 1px rgb(202, 202, 202);
+  font-weight: bold;
+  margin: 2px 0;
+}
+.App__menu_facts p span {
+  font-weight: normal;
+}
+
+
+
+
+
+.App__food_categories {
+
+}
+
+.App__restaurants {
+
+}
