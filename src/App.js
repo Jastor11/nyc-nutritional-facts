@@ -53,7 +53,7 @@ class App extends React.Component {
   }
 
   formatData = (data) => {
-    console.log(data)     
+    // console.log(data)     
     const categories = this.getFoodCategories(data)
     const restaurants = this.getRestaurants(data)
     this.setState({ 
