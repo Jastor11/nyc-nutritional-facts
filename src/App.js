@@ -69,6 +69,7 @@ class App extends React.Component {
       Item_Description,
       Calories,
       Carbohydrates,
+      Cholesterol,
       Dietary_Fiber,
       Protein,
       Saturated_Fat,
@@ -82,16 +83,17 @@ class App extends React.Component {
       <div className="App__menu_facts">
         <h3 style={{ borderBottom: 'solid 4px black'}}>Nutrition Facts</h3>
         <h4>{ Item_Name }</h4>
-        <p>Description: <span>{ Item_Description }</span></p>
-        <p>Calories     <span>{ Calories }</span></p>
-        <p>Carbs        <span>{ Carbohydrates }</span></p>
-        <p>Cholesterol  <span>{ Dietary_Fiber }</span></p>
-        <p>Protein      <span>{ Protein }</span></p>
-        <p>Fiber        <span>{ Saturated_Fat }</span></p>
-        <p>Sugar        <span>{ Sodium }</span></p>
-        <p>Carbs        <span>{ Sugar }</span></p>
-        <p>Total Fat    <span>{ Total_Fat }</span></p>
-        <p>Trans Fat    <span>{ Trans_Fat }</span></p>
+        <p>Description:  <span>{ Item_Description }</span></p>
+        <p>Calories      <span>{ Calories }</span></p>
+        <p>Carbs         <span>{ Carbohydrates }</span></p>
+        <p>Cholesterol   <span>{ Cholesterol }</span></p>
+        <p>Protein       <span>{ Protein }</span></p>
+        <p>Fiber         <span>{ Dietary_Fiber }</span></p>
+        <p>Sodium        <span>{ Sodium }</span></p>
+        <p>Sugar         <span>{ Sugar }</span></p>
+        <p>Total Fat     <span>{ Total_Fat }</span></p>
+        <p>Saturated Fat <span>{ Saturated_Fat }</span></p>
+        <p>Trans Fat     <span>{ Trans_Fat }</span></p>
       </div>
     )
   }
@@ -154,7 +156,7 @@ class App extends React.Component {
           <a 
             href="https://data.cityofnewyork.us/Health/DOHMH-MenuStat/qgc5-ecnb" 
             target="_blank" 
-            rel="noopener referrer"
+            rel="noopener noreferrer"
           >
             NYC Open Data platform
           </a>.
