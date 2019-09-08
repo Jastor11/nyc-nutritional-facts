@@ -150,8 +150,15 @@ class App extends React.Component {
           Finding healthy food is hard. Sometimes we just settle for what's available.
           That doesn't mean you shouldn't know what's going into your body. The Know Your Food
           app is here to arm you with all the nutritional facts you need to keep your diet in check.
-          All data is pulled from the MenuStat.org interactive online database. Pick a food 
-          category and restaurant to get started. 
+          All data is pulled from the MenuStat.org interactive online database available on the &nbsp; 
+          <a 
+            href="https://data.cityofnewyork.us/Health/DOHMH-MenuStat/qgc5-ecnb" 
+            target="_blank" 
+            rel="noopener referrer"
+          >
+            NYC Open Data platform
+          </a>.
+          Pick a food category and restaurant to get started. 
         </div>
         <div className="App__filters">
           {
